@@ -5,8 +5,7 @@
   },
   {
     "repository": "vendor_oneplus_avicii",
-    "target_path": "vendor/oneplus/avicii",
-    "remote":"superior-gitlab"
+    "target_path": "vendor/oneplus/avicii"
   },
   {
     "repository":"LineageOS/android_packages_resources_devicesettings",
