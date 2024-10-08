@@ -177,8 +177,8 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, hardware/Motorola/Dolby/dolby-setup.mk)
 
 # Doze
-PRODUCT_PACKAGES += \
-    OplusDoze
+# PRODUCT_PACKAGES += \
+#     OplusDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -325,6 +325,14 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
+
+# OnePlusSettings
+PRODUCT_PACKAGES += \
+    OnePlusSettings
+
+# OPFeature
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/odm_feature_list:$(TARGET_COPY_OUT_ODM)/etc/odm_feature_list
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
