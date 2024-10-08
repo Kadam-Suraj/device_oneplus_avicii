@@ -68,6 +68,10 @@ on late-fs
 on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
 
+    # Dolby
+    mkdir /data/vendor/dolby 0770 media media
+    mkdir /data/vendor/multimedia 0775 system system
+
 on early-boot
     start vendor.sensors
 
